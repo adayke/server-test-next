@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Server Management Application
 
-## Getting Started
+Этот проект представляет собой веб-приложение на основе React/Next.js, предназначенное для управления списком серверов клиентов. Данный проект является частью тестового задания. Приложение обеспечивает функциональность просмотра, выбора и редактирования деталей сервера.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **List Display**: Отображает список серверов клиентов с деталями.
+- **Select Server**: Пользователи могут выбрать сервер из списка для редактирования.
+- **Edit Server**: Предоставляет возможность редактировать свойства, такие как имя сервера и тип сервера.
+
+## Data Model Example
+
+```json
+[
+  {
+    "customer_id": "user1",
+    "server_name": "server7",
+    "server_type": "vds"
+  },
+  {
+    "customer_id": "user5",
+    "server_name": "server2",
+    "server_type": "dedicated"
+  },
+  {
+    "customer_id": "user3",
+    "server_name": "server4",
+    "server_type": "hosting"
+  }
+]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Framework: React with Next.js
+Typescript: Utilized for static type-checking (optional)
+UI Framework: Tailwind CSS (optional)
+Styling: SCSS/LESS/Stylus for advanced styling (optional)
+ES6+: Demonstrates usage of modern JavaScript features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Setup and Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To set up this project locally, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Clone the Repository:
 
-## Learn More
+git clone https://github.com/adayke/server-test-next.git
+cd server-test-next
 
-To learn more about Next.js, take a look at the following resources:
+## Install Dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Running the Application:
 
-## Deploy on Vercel
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Adayke
